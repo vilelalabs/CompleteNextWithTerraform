@@ -8,7 +8,7 @@ variable "ec2-ami-id" {
 }
 
 variable "ec2-instance-type" {
-  default = "t2.nano" # nano -> 1 CPU 500Mb RAM
+  default = "t2.micro" # micro -> 1 vCPU, 1 GiB RAM
   description = "The type of instance to start"
 }
 
