@@ -1,6 +1,11 @@
-# directory where site will be hosted ( nginx will seach for)
-sudo mkdir -p /var/www/demo-website
 
+# directory where site will be hosted ( nginx will seach for)
+sudo mkdir -p /var/www
+cd /var/www
+#import project folder from github (from example)
+sudo git clone https://github.com/emanuelturis/deploy-nextjs-from-scratch.git
+# rename project folder
+sudo mv deploy-nextjs-from-scratch demo-website
 # ec2-user as owner of project folder
 sudo chown -R ec2-user:ec2-user /var/www/demo-website
 
