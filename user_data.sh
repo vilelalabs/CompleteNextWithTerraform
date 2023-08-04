@@ -4,6 +4,9 @@
 # -- Update the System --
 sudo dnf update -y
 
+# -- Install basic tools --
+sudo sh /home/ec2-user/basics-install.sh
+
 # -- Install NGINX and Certbot --   
 sudo sh /home/ec2-user/nginx-certbot-install.sh
 
